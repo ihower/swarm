@@ -85,3 +85,4 @@ def run_demo_loop(
 
         messages.extend(response.messages)
         agent = response.agent
+        context_variables = response.context_variables
