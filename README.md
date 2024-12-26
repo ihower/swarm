@@ -1,5 +1,29 @@
 ![Swarm Logo](assets/logo.png)
 
+
+# ihower fork 版本
+
+
+## 如何執行 example script?
+
+* `git clone git@github.com:ihower/swarm.git`
+* `cd swarm`
+* `export OPENAI_API_KEY=sk-xxxxxxxxx` 設定 OpenAI API key
+* `export PYTHONPATH=$(pwd):$PYTHONPATH` 將此目錄的 swarm 目錄加入 python lib 載入路徑
+
+如此就可以順利執行 examples 下的案例檔案了，例如
+
+`python3 examples/basic/agent_handoff.py`
+
+
+## Changelogs
+
+因為 OpenAI 不繼續維護這個專案，也不接受 Pull Requests，因此這裡有做一些修改:
+
+* fix repl 的 context_variables 傳遞
+* 改進 repl 可以傳入 client 參數
+
+
 # Swarm (experimental, educational)
 
 An educational framework exploring ergonomic, lightweight multi-agent orchestration.
